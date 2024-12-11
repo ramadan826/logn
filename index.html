@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="grand w-100 vh-100">
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class=" col-md-9   ">
+                    <div class="group d-flex flex-column justify-content-center align-items-center  my-5 p-4">
+                        <h1 class="text-center my-4">Smart Login System</h1>
+                        <div class="inputs ">
+                            <input type="text" class="form-control my-3 text-white" id="Name" oninput="vaildation(this)" placeholder="Enter Your Name" >
+                            <div class="box  my-3 alert alert-danger py-0 d-none">
+                                <p> enter your username at least 3 character</p>
+                              </div>
+                            <input type="text" class="form-control my-3 text-white" id="email" oninput="vaildation(this)"  placeholder="Enter Your email" >
+                            <div class="box  my-3 alert alert-danger py-0 d-none">
+                                <p> ex:hwhwhs342@gmail.com</p>
+                              </div>
+                            <input type="password" class="form-control my-3 text-white" id="password" oninput="vaildation(this)" placeholder="Password" >
+                            <div class="box  my-3 alert alert-danger py-0 d-none">
+                                <p> at least 8 character not geater than 16 character</p>
+                              </div>
+                        </div>
+                        <button type="submit" id="addBtn" class="btn btn-outline-info my-3">Login</button>
+                        <p id="inputvaild" class=""></p>
+                        <p id="inputError" class=""></p>
+                        <p class="text-white">Don’t have an account? <a href="signin.html" class="">Sign in</a></p>
+                          </div>
+                         
+                        </div>
+                          
+    
+                </div>
+            </div>
+        </div>
+    
+
+
+        <script src="js/signup.js"></script>
+</body>
+</html>
